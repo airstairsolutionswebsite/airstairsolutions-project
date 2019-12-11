@@ -2,7 +2,7 @@
   "name": "air-stair",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://airstairsolutions.com/",
+  "homepage": "http://www.airstairsolutions.com/",
   "dependencies": {
     "bootstrap": "^4.3.1",
     "daemonite-material": "^4.1.1",
