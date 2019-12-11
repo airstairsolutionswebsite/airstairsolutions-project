@@ -1,7 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-// import { HashRouter, Route } from "react-router-dom";
-import { Router, Route, browserHistory } from "react-router";
+import { HashRouter, Route } from "react-router-dom";
 import ScrollToTop from "./fcomponents/ScrollToTop";
 import "./index.scss";
 import AppHome from "./AppHome";
@@ -22,7 +21,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 const routing = (
   // <HashRouter basename={process.env.PUBLIC_URL}>
-  <Router history={browserHistory}>
+  <HashRouter basename={"/"}>
     <ScrollToTop />
     <Route exact path="/" component={AppHome} />
     <Route path="/how-it-works" component={App2HowItWorks} />
@@ -34,7 +33,7 @@ const routing = (
     <Route path="/specsandwarranty" component={App7SpecsAndWarranty} />
     <Route path="/pricingrequest" component={App8PricingRequest} />
     <Route path="/privacyandterms" component={App9PrivacyAndTerms} />
-  </Router>
+  </HashRouter>
 );
 
 ReactDOM.render(routing, document.getElementById("root"));
