@@ -30,7 +30,7 @@ function SocialRow() {
           alt="social"
         ></Image>
       </a>
-      <a
+      {/* <a
         href="https://www.linkedin.com/"
         target="_blank"
         rel="noopener noreferrer"
@@ -40,7 +40,7 @@ function SocialRow() {
           src={footerInRed}
           alt="social"
         ></Image>
-      </a>
+      </a> */}
     </div>
   );
 }

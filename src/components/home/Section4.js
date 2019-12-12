@@ -1,5 +1,6 @@
 import React from "react";
 import { Container, Row, Col, Image, Card, Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import section4img1 from "../../images/home/home-section4-img1.jpeg";
 import pattern from "../../images/general/pattern.png";
 import Fade from "react-reveal/Fade";
@@ -24,13 +25,15 @@ function Section4() {
           </Fade>
           <Fade>
             <div className="btnl">
-              <Button
-                id="button-frame-1"
-                className="pr-5 pl-5 pt-3 pb-3 mt-5"
-                variant="outline-danger"
-              >
-                LEARN MORE
-              </Button>
+              <Link to="/aero-chair">
+                <Button
+                  id="button-frame-1"
+                  className="pr-5 pl-5 pt-3 pb-3 mt-5"
+                  variant="outline-danger"
+                >
+                  LEARN MORE
+                </Button>
+              </Link>
             </div>
           </Fade>
           <br></br>

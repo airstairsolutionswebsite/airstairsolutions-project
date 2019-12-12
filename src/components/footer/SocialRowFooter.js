@@ -29,7 +29,7 @@ function SocialRowFooter() {
           className="social-row-button-white-shadow"
         ></Image>
       </a>
-      <a
+      {/* <a
         href="https://www.linkedin.com/"
         target="_blank"
         rel="noopener noreferrer"
@@ -39,7 +39,7 @@ function SocialRowFooter() {
           src={footerIn}
           alt="social"
         ></Image>
-      </a>
+      </a> */}
     </div>
   );
 }
