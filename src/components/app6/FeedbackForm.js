@@ -16,7 +16,7 @@ export default class FeedbackForm extends Component {
     let templateParams = {
       from_name: name,
       from_email: email,
-      to_name: "Soleste Living",
+      to_name: "Air Stair Solutions",
       phoneNumber: phoneNumber,
       message_html: message
     };
