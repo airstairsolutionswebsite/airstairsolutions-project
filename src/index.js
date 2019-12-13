@@ -37,7 +37,7 @@ const routing = (
       <Route path="/specsandwarranty" component={App7SpecsAndWarranty} />
       <Route path="/pricingrequest" component={App8PricingRequest} />
       <Route path="/privacyandterms" component={App9PrivacyAndTerms} />
-      <Route component={Page404} />
+      {/* <Route component={Page404} /> */}
     </Analytics>
   </HashRouter>
 );

@@ -1,12 +1,5 @@
-import React, { Component } from "react";
+import React from "react";
 
-export default class Page404 extends Component {
-  componentDidMount() {
-    setTimeout(() => {
-      window.location.href = "https://www.airstairsolutions.com";
-    }, 5000);
-  }
-  render() {
-    return <div>1</div>;
-  }
+export default function Page404() {
+  return <div>404</div>;
 }
