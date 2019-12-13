@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { HashRouter, Route } from "react-router-dom";
+// import { HashRouter, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Analytics from "react-router-ga";
 import ScrollToTop from "./fcomponents/ScrollToTop";
 import "./index.scss";
@@ -16,27 +17,32 @@ import App7SpecsAndWarranty from "./App7SpecsAndWarranty";
 import App8PricingRequest from "./App8PricingRequest";
 import App9PrivacyAndTerms from "./App9PrivacyAndTerms";
 
+import Page404 from "./Page404";
+
 import * as serviceWorker from "./serviceWorker";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const routing = (
   // <HashRouter basename={process.env.PUBLIC_URL}>
-  <HashRouter basename={"/"}>
+  <Router basename={"/"}>
     <Analytics id="UA-154413520-1" debug>
       <ScrollToTop />
-      <Route exact path="/" component={AppHome} />
-      <Route path="/how-it-works" component={App2HowItWorks} />
-      <Route path="/team-and-vision" component={App3TeamVision} />
-      <Route path="/faq" component={App4FAQ} />
-      <Route path="/aero-chair" component={App5ProductAeroChair} />
-      <Route path="/cargo-loader" component={App5ProductCargoLoader} />
-      <Route path="/contact" component={App6Contact} />
-      <Route path="/specsandwarranty" component={App7SpecsAndWarranty} />
-      <Route path="/pricingrequest" component={App8PricingRequest} />
-      <Route path="/privacyandterms" component={App9PrivacyAndTerms} />
+      <Switch>
+        <Route exact path="/" component={AppHome} />
+        <Route path="/how-it-works" component={App2HowItWorks} />
+        <Route path="/team-and-vision" component={App3TeamVision} />
+        <Route path="/faq" component={App4FAQ} />
+        <Route path="/aero-chair" component={App5ProductAeroChair} />
+        <Route path="/cargo-loader" component={App5ProductCargoLoader} />
+        <Route path="/contact" component={App6Contact} />
+        <Route path="/specsandwarranty" component={App7SpecsAndWarranty} />
+        <Route path="/pricingrequest" component={App8PricingRequest} />
+        <Route path="/privacyandterms" component={App9PrivacyAndTerms} />
+        <Route path="*" component={Page404} />
+      </Switch>
     </Analytics>
-  </HashRouter>
+  </Router>
 );
 
 ReactDOM.render(routing, document.getElementById("root"));
