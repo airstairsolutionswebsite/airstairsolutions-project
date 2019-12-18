@@ -84,12 +84,19 @@ function ControlledCarousel() {
         <Row>
           <Fade left>
             <div className="carouselcontact">
-              <a href="mailto:aimee@airstairsolutions.com">
-                <Image
-                  className="mt-5"
-                  src={carouselcontact}
-                  alt="contact"
-                ></Image>
+              <a
+                href="mailto:aimee@airstairsolutions.com"
+                className="text-white"
+              >
+                <div className="contactMail">
+                  <Image
+                    className="mr-3 mb-1"
+                    src={carouselcontact}
+                    alt="contact"
+                  ></Image>
+                  Contact for immediate assistance{" "}
+                  <span className="mailH">aimee@airstairsolutions.com</span>
+                </div>
               </a>
             </div>
           </Fade>
